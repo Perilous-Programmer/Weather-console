@@ -36,11 +36,11 @@ cityAddressList = [
 temp = VisualCrossing.new
 rows = [["city", "wind_avg", "wind_median", "temp_avg", "temp_median"]]
 cityAddressList.map { |address|
-temp.selectCityByAddress(address)
-days =  temp.getPastDaysWithTemperature(lastMonthDate, currentDate)
-dayWind = days.map {|day| day["windspeed"]}
-dayTemp = days.map {|day| day["temp"]}
-rows << [address,dayWind.sum/2,median(dayWind), dayTemp.sum/2, median(dayTemp)]
+    temp.selectCityByAddress(address)
+    days =  temp.getPastDaysWithTemperature(lastMonthDate, currentDate)
+    dayWind = days.map {|day| day["windspeed"]}
+    dayTemp = days.map {|day| day["temp"]}
+    rows << [address,dayWind.sum/2,median(dayWind), dayTemp.sum/2, median(dayTemp)]
 }
 
 table = Terminal::Table.new :rows => rows
