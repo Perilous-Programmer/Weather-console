@@ -4,7 +4,7 @@ require 'json'
 class VisualCrossing
     @@key = 'GGZL8333FPWLS96G2SHJXCGV2'
     @@apiUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline'
-    @@apiParams = "unitGroup=metric&include=days&key=#{@@key}&contentType=json"
+    @@apiParams = "unitGroup=metric&include=days&key=#{ENV["API_KEY"]||@@key}&contentType=json"
 
     def initialize()
         

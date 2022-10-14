@@ -7,7 +7,7 @@ to run this Please install ruby 3.0 or greater
 
 then open the console  and navigate to this directory then use the following command to run the program.
 
-ruby main.rb
+API_KEY=GGZL8333FPWLS96G2SHJXCGV2 ruby main.rb
 
 
 If it throws exception for the daily quota please replace the key in VisualCrossing class with a new key
