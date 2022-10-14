@@ -2,7 +2,7 @@ require 'net/http'
 require 'json'
 
 class VisualCrossing
-    @@key = 'Z7KHG7S28BDP5RB6B3MBEZD3E'
+    @@key = 'GGZL8333FPWLS96G2SHJXCGV2'
     @@apiUrl = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline'
     @@apiParams = "unitGroup=metric&include=days&key=#{@@key}&contentType=json"
 
